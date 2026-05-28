@@ -6,7 +6,9 @@ void main() {
     debugShowCheckedModeBanner: false,
     home: (Scaffold(
         body: GradientContainer(
-          
+            color1: Colors.white,
+            color2: Colors.blue,
+            color3: Colors.red,
         ),
       )),
     ),
