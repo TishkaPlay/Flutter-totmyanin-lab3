@@ -31,8 +31,11 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: Center(
-        child: StyledText("Hello world!"),
+        child: Image.asset(
+          'flutter_lab3_app/assets/images/dice-1.png',
+          width: 300,
         ),
-      );
+      ),
+    );
   }
 }
