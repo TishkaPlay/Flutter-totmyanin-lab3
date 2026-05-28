@@ -38,6 +38,7 @@ class GradientContainer extends StatelessWidget {
       ),
       child: Center(
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
               'flutter_lab3_app/assets/images/dice-1.png',
@@ -45,6 +46,15 @@ class GradientContainer extends StatelessWidget {
             ),
             TextButton(
               onPressed: rollDice,
+              style: TextButton.styleFrom(
+                padding: const EdgeInsets.only(
+                  top: 20,
+                ),
+                foregroundColor: Colors.lime,
+                textStyle: const TextStyle(
+                  fontSize: 30,
+                ),
+              ),
               child: Text("Roll Dice"),
             ),
           ],
