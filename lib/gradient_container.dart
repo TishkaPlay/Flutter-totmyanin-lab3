@@ -5,6 +5,8 @@ const startAlignment = Alignment.topCenter;
 const endAlignment = Alignment.bottomCenter;
 
 class GradientContainer extends StatelessWidget {
+
+  
   final Color color1;
   final Color color2;
   final Color color3;
@@ -15,6 +17,10 @@ class GradientContainer extends StatelessWidget {
     required this.color2,
     required this.color3,
   });
+
+  void rollDice() {
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -31,9 +37,17 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: Center(
-        child: Image.asset(
-          'flutter_lab3_app/assets/images/dice-1.png',
-          width: 300,
+        child: Column(
+          children: [
+            Image.asset(
+              'flutter_lab3_app/assets/images/dice-1.png',
+            width: 300,
+            ),
+            TextButton(
+              onPressed: rollDice,
+              child: Text("Roll Dice"),
+            ),
+          ],
         ),
       ),
     );
